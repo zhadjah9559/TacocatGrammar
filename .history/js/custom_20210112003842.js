@@ -13,7 +13,6 @@ document.getElementById("userInputBtn").addEventListener("click", ()=>{
     if(userInput == reversedString){
         document.getElementById("output").innerHTML = "🌮The input you entered is a Palindrome!!😻"
     }else{
-        document.getElementById("output").innerHTML = "❌The input you entered is NOT a Palindrome😿"
+        document.getElementById("output").innerHTML = "❌The input you entered is NOT a Palindrome‼‼"
     }    
-    document.getElementById("userInput").innerHTML = ""
 })

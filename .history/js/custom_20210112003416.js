@@ -7,13 +7,15 @@ document.getElementById("userInputBtn").addEventListener("click", ()=>{
     //reverse array  {t,u,p,i,n}
     let reverseArray = arrayElements.reverse();
 
-    //reversestring  {tupin}
-    let reversedString = reverseArray.join('');
+    //reversestringtupin
+    let reversedString = reverseArrayValues.join('');
 
     if(userInput == reversedString){
-        document.getElementById("output").innerHTML = "🌮The input you entered is a Palindrome!!😻"
+        document.getElementById("output").innerHTML = "The input you entered is a Palindrome!!"
     }else{
-        document.getElementById("output").innerHTML = "❌The input you entered is NOT a Palindrome😿"
-    }    
-    document.getElementById("userInput").innerHTML = ""
+        document.getElementById("output").innerHTML = "The input you entered is NOT a Palindrome!!"
+    }
+
+
+    
 })

@@ -15,5 +15,5 @@ document.getElementById("userInputBtn").addEventListener("click", ()=>{
     }else{
         document.getElementById("output").innerHTML = "❌The input you entered is NOT a Palindrome😿"
     }    
-    document.getElementById("userInput").innerHTML = ""
+    document.getElementById("userInput")
 })
