@@ -1,14 +1,13 @@
 document.getElementById("userInputBtn").addEventListener("click", ()=>{
-    //userInput = {"input"}
     let userInput = document.getElementById("userInput").value
 
     //convert string to an array  { "i", "n", "p", "u", "t" }
     let arrayElements = userInput.split('')
 
-    //reverse array  =  { "t", "u", "p", "i", "n"}
+    //reverse array  {"t",u,p,i,n}
     let reverseArray = arrayElements.reverse();
 
-    //reversestring  =  {"tupin"}
+    //reversestring  {tupin}
     let reversedString = reverseArray.join('');
 
     if(userInput == reversedString){

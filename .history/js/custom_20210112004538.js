@@ -1,5 +1,5 @@
 document.getElementById("userInputBtn").addEventListener("click", ()=>{
-    //userInput = {"input"}
+    //u
     let userInput = document.getElementById("userInput").value
 
     //convert string to an array  { "i", "n", "p", "u", "t" }
