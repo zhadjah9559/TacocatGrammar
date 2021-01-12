@@ -1,8 +1,16 @@
 document.getElementById("userInputBtn").addEventListener("click", ()=>{
     let userInput = document.getElementById("userInput").value;
+    
 
-    // convert string to an array
-    const arrayElements = userInput.split('');
+    for(let i = 0; i < userInput.length; i++){
+
+    }
+    
+    
+
+    if( (userInput.length %2) == 0 )
+        document.getElementById("output").innerHTML = ``;
+
 
 
 
