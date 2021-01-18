@@ -1,6 +1,6 @@
 document.getElementById("userInputBtn").addEventListener("click", ()=>{
     //userInput = {"input"}
-    let userInput = document.getElementById("userInput").value
+    let userInput = parseInt(document.getElementById("userInput") )
 
     //cast to lowercase so there are no discrepancies
     let lowerCaseInput = userInput.toLowerCase()

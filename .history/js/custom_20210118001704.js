@@ -24,5 +24,5 @@ document.getElementById("userInputBtn").addEventListener("click", ()=>{
 })
 
 function clear(){
-    document.getElementById("userInput").value = ""
+    document.getElementById("userInput").value(); 
 }
