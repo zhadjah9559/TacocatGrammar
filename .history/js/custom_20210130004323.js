@@ -33,3 +33,5 @@ document.getElementById("userInputBtn").addEventListener("click", ()=>{
 document.getElementById("clearBtn").addEventListener("click", ()=>{
     document.getElementById("userInput").value = ""
 })
+
+

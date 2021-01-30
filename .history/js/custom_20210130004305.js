@@ -9,6 +9,7 @@ document.getElementById("userInputBtn").addEventListener("click", ()=>{
         //cast to lowercase so there are no discrepancies
         let lowerCaseInput = userInput.toLowerCase()
 
+
         let reversedString = lowerCaseInput.split("").reverse().join("")
 
         //lowerCaseInput.split('')
@@ -28,8 +29,12 @@ document.getElementById("userInputBtn").addEventListener("click", ()=>{
         
         userInput.value() = ""
     }
+    
+    
 })
 
 document.getElementById("clearBtn").addEventListener("click", ()=>{
     document.getElementById("userInput").value = ""
 })
+
+

@@ -49,8 +49,7 @@
                         let userInput = document.getElementById("userInput").value
                     
                         if(userInput === "") {
-                            document.getElementById("output").innerHTML = 
-                            `❌Please enter a string of characters❌`
+                            document.getElementById("output").innerHTML = `❌Please enter a string of characters❌`
                         }
                         else{
                             //cast to lowercase so there are no discrepancies
@@ -68,11 +67,9 @@
                             //reversestring  =  {"tupni"}
                             
                             if(lowerCaseInput == reversedString){
-                                document.getElementById("output").innerHTML = 
-                                `🌮 ${userInput} is a palindrome!!😻`
+                                document.getElementById("output").innerHTML = `🌮 ${userInput} is a palindrome!!😻`
                             }else{
-                                document.getElementById("output").innerHTML = 
-                                `❌ ${userInput} is NOT a palindrome😿`
+                                document.getElementById("output").innerHTML = `❌ ${userInput} is NOT a palindrome😿`
                             } 
                             
                             userInput.value() = ""

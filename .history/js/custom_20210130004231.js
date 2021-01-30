@@ -9,17 +9,19 @@ document.getElementById("userInputBtn").addEventListener("click", ()=>{
         //cast to lowercase so there are no discrepancies
         let lowerCaseInput = userInput.toLowerCase()
 
+
         let reversedString = lowerCaseInput.split("").reverse().join("")
 
         //lowerCaseInput.split('')
         //convert string to an array  { "i", "n", "p", "u", "t" }
     
-        //LowerCaseInput.split('').reverse()
+        //LowerCaseInput.split().reverse()
         //reverse array  =  { "t", "u", "p", "n", "i"}
         
-        //lowerCaseInput.split('').reverse().join('')
+        //lowerCaseInput.join('')
         //reversestring  =  {"tupni"}
         
+
         if(lowerCaseInput == reversedString){
             document.getElementById("output").innerHTML = `🌮 ${userInput} is a palindrome!!😻`
         }else{
@@ -28,8 +30,12 @@ document.getElementById("userInputBtn").addEventListener("click", ()=>{
         
         userInput.value() = ""
     }
+    
+    
 })
 
 document.getElementById("clearBtn").addEventListener("click", ()=>{
     document.getElementById("userInput").value = ""
 })
+
+

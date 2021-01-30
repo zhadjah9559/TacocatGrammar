@@ -28,8 +28,12 @@ document.getElementById("userInputBtn").addEventListener("click", ()=>{
         
         userInput.value() = ""
     }
+    
+    
 })
 
 document.getElementById("clearBtn").addEventListener("click", ()=>{
     document.getElementById("userInput").value = ""
 })
+
+
