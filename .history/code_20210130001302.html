@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Index</title>
+    <title>Code</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,49 +19,79 @@
             aria-expanded="false" aria-label="Toggle navigation"></button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">🌮Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">🌮Home </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="solve.html">🌮Solve </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="code.html">🌮Code </a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="code.html">🌮Code <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="https://github.com/zhadjah9559/TacocatGrammar">🌮Github</a>
+                    <a class="nav-link" target="_blank" href="https://github.com/zhadjah9559/SunsetHills">🌮Github</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="https://zacharyhadjah.netlify.app">🌮Portfolio</a>
+                    <a class="nav-link" target="_blank" href="https://www.zacharyhadjah.netlify.app">🌮Portfolio</a>
                 </li>                
             </ul>
         </div>
     </nav>
 
-    <div class="container align-items-center indexContainer">
-        <div class="row justify-content-center">
-            <img src="img/TacocatGrammar.png" alt="TacocatGrammarlogo" id="Logo" class="responsive" >
-        </div>
-        <hr>
-        <div class="row text-center justify-content-center">
 
-            <div class="col-6 form">
-                <h6>This program checks if your input is a palindrome</h6>
-                <p>A palindrome is a word that has the same spelling forwards and backwards. You will be
-                   asked to enter a word and the program will check whether the word you entered is a palindrome. 
-                </p>
-            </div>       
-        </div>
-        
-        
-            <a class="btn btn-primary offset-4 col-4" href="solve.html" >Check it Out</a>
-            <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col">
 
-            <div class="row justify-content-center">
-                <img id="badges" src="img/badges.png" alt="">
+                <pre class="line-numbers"><code class="language-javascript">
+    function BuzzNumbers(){
+        let num1 = parseInt( document.getElementById("input1").value )
+        let num2 = parseInt( document.getElementById("input2").value )
+        let results = document.getElementById("results")
+        let output = [];
+    
+        //prints 1 to 100
+        for (let i = 1; i <= 100; i++) {
+    
+            //if the number isn't divisible by num1 and num2, print the number itself
+            if( ( (i % num1) != 0) && (  (i % num2) != 0) ){
+                output.push(i)
+            }
+            
+            //if number is divisible by both
+            else if( ( (i % num1) == 0) && (  (i % num2) == 0) ){
+                output.push("FizzBuzz")     
+            }
+    
+            //if the number is divisible by only num1, then print fizz
+            else if( (i % num1) == 0 ){
+                output.push("fizz")    
+            }
+    
+            //if the number is divisible by only num2, then print buzz
+            else if(  (i % num2) == 0 ){
+                output.push("buzz")  
+            }        
+        }
+        
+        let tBody = "";  
+    
+        for (let i = 0; i < output.length; i+=5) {
+            tBody += `<tr> <td>${output[i]}</td> <td>${output[i+1]}</td>
+                        <td>${output[i+2]}</td> <td>${output[i+3]}</td> 
+                        <td>${output[i+4]}</td> </tr>` 
+            
+        }
+        document.getElementById("tBody").innerHTML = tBody
+    }                
+            </code></pre>
+
             </div>
-
+        </div>
     </div>
+
+
+
 
 
 
@@ -73,6 +103,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/prism.js"></script>
     <script src="js/custom.js"></script>
+
 
   </body>
 </html>

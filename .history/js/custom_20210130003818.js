@@ -2,10 +2,10 @@ document.getElementById("userInputBtn").addEventListener("click", ()=>{
     
     let userInput = document.getElementById("userInput").value
 
-    if(userInput === "") {
-        document.getElementById("output").innerHTML = `❌Please enter a string of characters❌`
+    if (userInput === "") {
+        document.getElementById("output")
     }
-    else{
+
         //cast to lowercase so there are no discrepancies
         let lowerCaseInput = userInput.toLowerCase()
 
@@ -29,7 +29,6 @@ document.getElementById("userInputBtn").addEventListener("click", ()=>{
         } 
         
         userInput.value() = ""
-    }
     
     
 })
